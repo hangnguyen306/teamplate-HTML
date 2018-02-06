@@ -1,0 +1,15 @@
+doctype html
+
+html(lang="en")
+    include base/head
+    body
+        include mixins/mixins.pug
+
+        block page_header
+        .page
+          block page_content
+        
+        block page_footer
+          include main/footer
+        
+        include base/scripts

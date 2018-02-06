@@ -1,0 +1,21 @@
+mixin makeMenu(dataList, classList)
+  ul(class= classList)
+    each item in dataList
+      if (item.subMenu)
+        li(class=(currentPage == item.current) ? 'active ' + item.extraClass : item.extraClass )
+          a(href=item.href) #{item.text}
+          +makeMenu(item.subMenu, item.subClass)
+      else
+        li(class=(currentPage == item.current) ? 'active' : item.extraClass )
+          a(href=item.href) #{item.text}
+
+mixin menuLink(dataMenu,classMenu)
+  ul(class=classMenu)
+    each item in dataMenu
+      li(class=(currentMenu=item.current)? 'active' : item.extraClass)
+       a(href=item.href) #{item.text}
+mixin menufooter(dataMenu,classMenu)
+  ul(class=classMenu)
+    each item in dataMenu
+      li(class=(currentPageFooter==item.current) ? 'active' : item.extraClass )
+       a(href=item.href) #{item.text}

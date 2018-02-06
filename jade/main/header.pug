@@ -1,0 +1,44 @@
+include ../data/menu
+header.header
+  .nav
+    .container
+      .row
+        .col-md-4
+          p.txt-home Welcome to Twin Disc (Far East) Pte Ltd
+        .col-md-8
+          .nv-top-right
+            .widget-lang
+              span.show-land
+                i.fa.fa-globe
+                |English 
+              .dropdow-lang
+                ul
+                  li: a(href="#") English 
+                  li: a(href="#") 中文
+            .widget-login
+              span.show-login
+                i.fa.fa-user
+                |  Asia Dealers Login
+              .form-login
+                form 
+                  input.form-control(type="text" placeholder="Username")
+                  input.form-control(type="text" placeholder="Password")
+                  .checkbox
+                    input(type="checkbox" id="remember")
+                    label(for="remember") Remember me
+                  button.btn-login.btn Log In
+  .container
+    .wrapheader
+      .logo
+        a(href="index.html"): img(src="img/logo.png" alt="")
+      .wrapmenu
+        a(href="#menu" class="menu-page btn-menu")
+          span.burger-icon-1
+          span.burger-icon-2
+          span.burger-icon-3
+        #menu.mainmenu
+          +makeMenu(menu_text, 'menu')
+        .top-contact
+          a(href="contact-us.html")
+            i.fa.fa-laptop 
+            | Contact Us

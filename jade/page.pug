@@ -1,0 +1,64 @@
+doctype html
+
+html(lang="en")
+    include base/head
+    body
+      include mixins/mixins.pug
+
+      block page_header
+      block page_content
+         -
+          menu_text = [
+            {
+              href:'index.html',
+              text: 'Homepage',
+            },
+            {
+              href:'events.html',
+              text: 'Events',
+            },
+             {
+              href:'about-us.html',
+              text: 'Events',
+            },
+            {
+              href:'products.html',
+              text: 'Products',
+            },
+            {
+              href:'services.html',
+              text: 'Our services',
+            },
+            {
+              href:'solutions.html',
+              text: 'Engineering Solutions',
+            },
+            {
+              href:'solutions-1.html',
+              text: 'Engineering Solutions Categories',
+            },
+            {
+              href:'solutions-2.html',
+              text: 'Engineering Solutions Detail',
+            },
+            {
+              href:'network-map.html',
+              text: 'Network Map',
+            },
+            {
+              href:'contact-us.html',
+              text: 'Contact Us',
+            },
+            {
+              href:'thank-you.html',
+              text: 'Thank you',
+            },
+            {
+              href:'login.html',
+              text: 'Login',
+            }
+          ]
+      .text-center: img(style="margin-top:30px" src="img/logo.png" alt="")
+      ol(style="    padding: 30px;margin: 0 auto;width: 500px;font-size: 15px;border: 4px solid #e4e1e1;margin-top: 22px;padding-left: 40px;")
+        each item in menu_text
+          li(style="line-height: 30px;"): a(href=item.href)(target="_blank") #{item.text}
