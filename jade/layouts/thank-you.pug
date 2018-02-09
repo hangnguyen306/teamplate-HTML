@@ -1,0 +1,26 @@
+extends ../master
+
+block title
+    title  Fifth Avenue Interior Pte Ltd
+
+block page_header
+    - var currentPage = 'contact-us'
+    - var currentPageFooter = 'contact-us'
+    include ../main/header.pug
+block page_content
+  .mainpage.thank-page
+    .page-banner
+    .container
+      .inner-banner
+        .tbl-cell
+    .container
+      ol.breadcrumb
+          li: a(href="#") Home   
+          li.active   Contact Us
+      .maincontent
+        include ../modules/thankyou
+
+        
+
+
+          

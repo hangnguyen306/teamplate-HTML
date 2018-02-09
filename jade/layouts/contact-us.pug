@@ -1,0 +1,38 @@
+extends ../master
+
+block title
+    title  Fifth Avenue Interior Pte Ltd
+
+block page_header
+    - var currentPage = 'contact-us'
+    - var currentPageFooter = 'contact-us'
+    include ../main/header.pug
+block page_content
+  .page-banner
+    img(src="img/tempt/5thAve_contact.jpg" alt="")
+    .container
+      .inner-banner
+        .tbl-cell
+          h4 Contact Us
+  .mainpage
+    .container
+      ol.breadcrumb
+          li: a(href="#") Home   
+          li.active   Contact Us
+      .maincontent
+        include ../modules/map
+        .grp-contact-page.clearfix
+          .cnt-left
+            include ../modules/adress
+            include ../modules/pdpa
+          .cnt-right
+            include ../modules/form-contact
+
+  block append page_scripts
+  script(type="text/javascript", src="http://maps.google.com/maps/api/js?key=AIzaSyCn1v4yWjfpdV0S--Uo0I2NKgU7Kehm32s")
+  script(type="text/javascript", src="js/map.js")
+
+        
+
+
+          

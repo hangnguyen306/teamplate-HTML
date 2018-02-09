@@ -1,0 +1,37 @@
+.panel-group(id="accordion" role="tablist" aria-multiselectable="true")
+  .panel.panel-default
+    .panel-heading(role="tab" id="headingOne")
+      h4.panel-title
+        a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+          | Interior Designer
+          span.icon-tab: i.fa.fa-caret-down
+    #collapseOne(class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne")
+      .panel-body.document
+       p <strong>Job Description :<br/>
+                | - Manage all projects & make monthly reports <br/>
+                | - Has a strong sense when it comes to designing <br/>
+                | - Must be a leader and can work under minimal supervision</strong>
+  .panel.panel-default
+    .panel-heading(role="tab" id="headingOne")
+      h4.panel-title
+        a(role="button" data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+          | Senior Designer
+          span.icon-tab: i.fa.fa-caret-down
+    #collapseTwo(class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo")
+      .panel-body.document
+       p <strong>Job Description :<br/>
+                | - Manage all projects & make monthly reports <br/>
+                | - Has a strong sense when it comes to designing <br/>
+                | - Must be a leader and can work under minimal supervision</strong>
+  .panel.panel-default
+    .panel-heading(role="tab" id="headingOne")
+      h4.panel-title
+        a(role="button" data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree")
+          | Admin
+          span.icon-tab: i.fa.fa-caret-down
+    #collapseThree(class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo")
+      .panel-body.document
+       p <strong>Job Description :<br/>
+                | - Manage all projects & make monthly reports <br/>
+                | - Has a strong sense when it comes to designing <br/>
+                | - Must be a leader and can work under minimal supervision</strong>

@@ -52,6 +52,11 @@ ul.slick-dots li:after{top:-3px;left:-3px;right:-3px;bottom:-3px;border:1px soli
 ul.slick-dots li.slick-active{background:#fff}
 ul.slick-dots li.slick-active:after{border:1px solid rgba(255,255,255,1);}
 
+/*for header*/
+.t-header-1{}
+.t-header-2{}
+.t-header-3{}
+
 /*Document*/
 .document hr{margin-top:40px;margin-bottom:40px;border-top:1px solid #e8e8e8;}
 .document{}
@@ -196,6 +201,27 @@ ul.menuchild.menuother li a{padding-left:0;text-transform:initial;}
 .widget-tk-info h5{font-size:40px;color:#36464e;font-family:'Poppins',sans-serif;font-weight:300;margin:0;letter-spacing:-.5px;padding-bottom:40px}
 .widget-tk-info p{color:#646c70;line-height:24px;font-size:14px}
 
+/*Accordion*/
+.panel-group .panel { border: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0); border: 1px solid #dbdbdb; border-radius: 0; }
+.panel-default>.panel-heading { border-radius: 0 !important; padding: 0; background: none; border-color: #dbdbdb; }
+h4.panel-title a { font-size: 16px; color: #434343; position: relative; display: block; padding: 16px 24px; background: none; font-weight: bold; }
+h4.panel-title a { text-decoration: none; }
+span.icon-tab { position: absolute; right: 40px; top: 15px; }
+.panel-body { background: #f9f9f9; padding-left: 35px; padding-right: 35px; }
+.panel-body.document strong { color: #434343; }
+.panel-body.document { font-size: 14px; color: #434343; }
+h4.panel-title a.collapsed span.icon-tab .fa-caret-down:before { content: "\f0da"; }
+h4.panel-title a:after { position: absolute; content: ''; left: 0; right: 0; bottom: 0; top: 0; border: 5px solid #dbdbdb; }
+h4.panel-title span.avatar:after { position: absolute; content: ''; left: 0; right: 0; bottom: 0; top: 0; border: 5px solid #dbdbdb; border-radius: 50% }
+h4.panel-title a.collapsed:after { border: none; }
+h4.panel-title a.collapsed span.avatar:after { border: none; }
+h4.panel-title a.collapsed span.avatar:before { content: ''; height: 49px; top: 27px; right: -7px; }
+h4.panel-title span.avatar:before { content: ''; width: 15px; background: #ffffff; height: 39px; position: absolute; top: 32px; right: -4px; z-index: 99; }
+/*Radio*/
+.grp-radio .radio { display: inline-block; vertical-align: top; padding-right: 20px; vertical-align: top; margin: 0; }
+.radio+.radio,
+.checkbox+.checkbox { margin: 0 }
+.grp-radio { padding-top: 16px; }
 /*Menu child when responsive*/
 .btn-nav{display:none;}
 @media (min-width:1200px){

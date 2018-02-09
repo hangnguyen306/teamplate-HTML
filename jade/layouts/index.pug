@@ -1,0 +1,29 @@
+extends ../master
+
+block title
+    title  Fifth Avenue Interior Pte Ltd
+
+block page_header
+    - var currentPage = 'home'
+    - var currentPageFooter = 'home'
+    include ../main/header.pug
+block page_content
+  .page_mainslider
+    include ../modules/slider_bg.pug
+  .mainhome
+    .box1-img
+      img(src="img/tempt/img1.jpg" alt="")
+    .container
+      .box1
+        .box1-left
+          .t-header-1
+            p Welcome to
+            h1 FIFTH AVENUE INTERIOR
+          .box1-info
+            p Timeless, innovative, functional – this is what we can promise you at Fifth Avenue Interior. We not only produce beautiful designs, but ensure practical solutions that will bring you smiles and put you at ease, once you step inside your dream home.
+            a(class="v-more effect-button" data-hover="OUR PROCESS" tabindex="0" href="our-process.html"): span OUR PROCESS
+      .box2
+        img(src="img/tempt/img2.jpg" alt="")
+      include ../modules/grid1-img-info
+
+          

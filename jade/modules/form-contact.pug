@@ -1,27 +1,39 @@
 .form-cnt
-  h5 Contact Form
-  p If you have further enquiry or feedback, please use the form below to contact us. We will get back to you soon as possible.
+  p We welcome your comments and feedback, feel free to get in touch with us using the form below. We will get a designer to attend to you at the soonest.<br/>We look forward to hearing from you!
   .form-style
     .form-item
-      label.lb1 Name <span class="sys">*</span>
+      label.lb1 Name <span class="sys">:</span>
       .form-ipt
         input.form-control(type="text")
     .form-item
-      label.lb1 Contact Number <span class="sys">*</span>
+      label.lb1 Email <span class="sys">:</span>
       .form-ipt
         input.form-control(type="text")
     .form-item
-      label.lb1 Email <span class="sys">*</span>
+      label.lb1 Contact No. <span class="sys">:</span>
       .form-ipt
         input.form-control(type="text")
     .form-item
-      label.lb1 Message/Feedback
+      label.lb1 Key Collection <span class="sys">:</span>
+      .form-ipt
+        input.form-control(type="text")
+    .form-item
+      label.lb1 Type of Design <span class="sys">:</span>
+      .form-ipt
+        select.selectpicker
+          option Scandinavian
+    .form-item
+      label.lb1 Type of Residential <span class="sys">:</span>
+      .form-ipt
+         select.selectpicker(title="Type of Residential")
+            option Sample
+    .form-item
+      label.lb1 Comments/Feedback <span class="sys">:</span>
       .form-ipt
         textarea.form-control
     .form-item
         label.lb1 
         .form-ipt
-          img(src="img/tempt/capcha.jpg" atl="")
+          .box-capcha: img(src="img/tempt/capcha.jpg" atl="")
           .grp-btn
             button.btn.btn-sm(onclick="window.location.href='thank-you.html'") Submit
-            button.btn.btn-sm Cancel
