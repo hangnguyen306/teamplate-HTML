@@ -191,6 +191,15 @@ ul.menuchild li{list-style:none;}
 ul.menuchild{margin:0;padding:0px 10px;list-style:none;border:1px solid #dbdbdb;font-family:'Poppins',sans-serif;}
 ul.menuchild.menuother{border:none;padding:0;}
 ul.menuchild.menuother li a{padding-left:0;text-transform:initial;}
+/*tab*/
+.nav-tabs li { display: inline-block; float: none; margin: 0; }
+.nav-tabs li a { font-size: 12px; color: #282828; padding: 15px 31px; font-weight: bold; border: 1px solid #dddddd !important; border-radius: 4px; font-family: 'Poppins', sans-serif; }
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus,
+.nav-tabs li a:hover { background: #1862ad; color: #fff }
+.nav-tabs { border-bottom: none; }
+.tab-pane { padding-top: 30px }
 
 /*Thank -you*/
 .widget-thankyou{}
